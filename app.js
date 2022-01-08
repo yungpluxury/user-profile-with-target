@@ -42,7 +42,7 @@ const { DATA_BASE, NODE_ENV } = process.env;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect(NODE_ENV === 'production' ? DATA_BASE : 'mongodb://localhost:27017/pobedadbtarget');
+mongoose.connect(NODE_ENV === 'production' ? DATA_BASE : 'mongodb://localhost:27017/pobedadb');
 
 app.use(requestLogger);
 
