@@ -1,5 +1,16 @@
 const router = require('express').Router();
-const { getUser, updateTarget } = require('../controllers/users');
+const { getUser, updateChild, updateKomnedv, updateGknedv, updateBtech, updateNewauto, updateBuauto, updateFr, updateSr, updateMed, updateOfficetech, updatePc, updateGames } = require('../controllers/users');
 router.get('/api/getuser', getUser);
-router.patch('/api/updatetarget', updateTarget);
+router.patch('/api/updatechild', updateChild);
+router.patch('/api/updatekomnedv', updateKomnedv);
+router.patch('/api/updategknedv', updateGknedv);
+router.patch('/api/updatebtech', updateBtech);
+router.patch('/api/updatenewauto', updateNewauto);
+router.patch('/api/updatebuauto', updateBuauto);
+router.patch('/api/updatefr', updateFr);
+router.patch('/api/updatesr', updateSr);
+router.patch('/api/updatemed', updateMed);
+router.patch('/api/updateofficetech', updateOfficetech);
+router.patch('/api/updatepc', updatePc);
+router.patch('/api/updategames', updateGames);
 module.exports = router;
