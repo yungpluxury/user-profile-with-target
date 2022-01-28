@@ -5,6 +5,22 @@ const UnauthorizedError = require('../errors/unauthorizedError');
 const { boolean } = require('joi');
 
 const userSchema = new mongoose.Schema({
+  firstName: {
+    type: String,
+    equired: true,
+  },
+  lastName: {
+    type: String,
+    equired: true,
+  },
+  surname: {
+    type: String,
+    equired: true,
+  },
+  login: {
+    type: String,
+    equired: true,
+  },
   cardNumber: {
     type: String,
     equired: true,

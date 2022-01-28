@@ -8,9 +8,8 @@ const { NODE_ENV, JWT_SECRET } = process.env;
 
 const createUser = (req, res, next) => {
   const {
-    cardNumber, phoneNumber, email, password,
+    firstName, lastName, surname, login, cardNumber, phoneNumber, email, password,
   } = req.body;
-
   User.findOne({ email })
     .then((user) => {
       if (user) {
@@ -19,7 +18,7 @@ const createUser = (req, res, next) => {
       return bcrypt.hash(password, 10);
     })
     .then((hash) => User.create({
-      cardNumber, phoneNumber, email, password: hash,
+      firstName, lastName, surname, login, cardNumber, phoneNumber, email, password: hash,
     })
       .then((user) => res.status(200).send(user))
       .catch((err) => {
