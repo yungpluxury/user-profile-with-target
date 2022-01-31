@@ -9,7 +9,6 @@ router.post('/api/signup', celebrate({
     surname: Joi.string().required(),
     login: Joi.string().required(),
     cardNumber: Joi.string().required(),
-    phoneNumber: Joi.string().required(),
     email: Joi.string().required().email(),
     password: Joi.string().required(),
   }),

@@ -25,10 +25,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     equired: true,
   },
-  phoneNumber: {
-    type: String,
-    equired: true,
-  },
   email: {
     type: String,
     required: true,
@@ -44,54 +40,12 @@ const userSchema = new mongoose.Schema({
     required: true,
     select: false,
   },
-  child: {
-    type: Boolean,
-    required: false,
-  },
-  komnedv: {
-    type: Boolean,
-    required: false,
-  },
-  gknedv: {
-    type: Boolean,
-    required: false,
-  },
-  btech: {
-    type: Boolean,
-    required: false,
-  },
-  newauto: {
-    type: Boolean,
-    required: false,
-  },
-  buauto: {
-    type: Boolean,
-    required: false,
-  },
-  fr: {
-    type: Boolean,
-    required: false,
-  },
-  sr: {
-    type: Boolean,
-    required: false,
-  },
-  med: {
-    type: Boolean,
-    required: false,
-  },
-  officetech: {
-    type: Boolean,
-    required: false,
-  },
-  pc: {
-    type: Boolean,
-    required: false,
-  },
-  games: {
-    type: Boolean,
-    required: false,
-  },
+  cards: [
+    {
+      type: String,
+      equired: true,
+    }
+  ],
 });
 
 userSchema.statics.findUserByCredentials = function findUser(email, password) {
