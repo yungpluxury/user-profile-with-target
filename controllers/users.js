@@ -6,39 +6,39 @@ const ConflictError = require('../errors/conflictError');
 const products = [
   {
     title: 'Ипотека в ползунках 5.9%',
-    url: 'https://downloader.disk.yandex.ru/preview/ab2d333ed9227a0423675f8baf9a086761666543cdb207cd52b9b1128d78e507/61f7462a/EboLgUMePJFuw1c-u061QpVt-scR-kV8ux4IMtsEd1UNOZmRsOLC6StYWekL0dYsNDPCsuLsLTFS_b-OfdJDUQ%3D%3D?uid=0&filename=min-banner-polzunki.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x947',
+    url: 'https://i.ibb.co/8KwPNRW/min-banner-polzunki.png',
   },
   {
     title: 'Бюджетное решение',
-    url: 'https://downloader.disk.yandex.ru/preview/5f0b198c2f7973160a8df0036b45f1ee0217a7712091fa3db866310a86982f27/61f7603b/5aokaZ30vg2Ro2ppCmzx45Vt-scR-kV8ux4IMtsEd1WvgWB9jzZf7zy_Cuyi6iPN8andOmm25ARm-fmKTYdtNg%3D%3D?uid=0&filename=br.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x947',
+    url: 'https://i.ibb.co/VvKxTv1/br.png',
   },
   {
     title: 'Кредит для своих',
-    url: 'https://downloader.disk.yandex.ru/preview/be05b5c48fd2bde7d0c16d6f4d3e95f6a64a38c8abc3111cd36a344fc7caf4ac/61f76048/kFDhSnx-WA7I2shunjD2G5Vt-scR-kV8ux4IMtsEd1U9CTxKUjDmLN0ER-qSi5fttHO0-AGeJm1yNkjVTvmCgQ%3D%3D?uid=0&filename=ks.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x947',
+    url: 'https://i.ibb.co/sjJmwS6/ks.png',
   },
   {
     title: 'Ипотека на коммерческую недвижимость',
-    url: 'https://downloader.disk.yandex.ru/preview/32661bc752650a5502d28857d5df22c11f03b5f4c1a28de77f1f51b8702f202c/61f76056/U6sfdNBwHmS_yhTpHRdfw5Vt-scR-kV8ux4IMtsEd1Udr-9WK7zF186TRItI7eVZFda28Lex3lTtJHJC83ec2w%3D%3D?uid=0&filename=252x150-ipoteka-na-komercheskuyu-nedvizhimost.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x947',
+    url: 'https://i.ibb.co/Tr8nDKS/252x150-ipoteka-na-komercheskuyu-nedvizhimost.png',
   },
   {
     title: 'Особая ипотека',
-    url: 'https://downloader.disk.yandex.ru/preview/45bb0415513e7ba1e109388ce1dab291a4ca0b6d9a3bb4226af9ae93fbd00d2e/61f76063/Ezct-Ir9sadc8bCIAtVqoZVt-scR-kV8ux4IMtsEd1XvNs60zjbGfdDHeFhqZU0a71SfD0vz-9aUY4lOnDUHlg%3D%3D?uid=0&filename=special-mortgage-minbanner.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x947',
+    url: 'https://i.ibb.co/jb0yyyj/special-mortgage-minbanner.png',
   },
   {
     title: 'Пенсионная карта',
-    url: 'https://downloader.disk.yandex.ru/preview/45f856e4f6588d897099b98676015933452243b0f1087562e3c3fd3287659cbf/61f76072/OuMvtj8oWoAgNq8V18SGTZVt-scR-kV8ux4IMtsEd1W49xA7-d1M9FLpPJepBPmnIAHuVFRgZBiFrQfaajQ7pA%3D%3D?uid=0&filename=pensionnaya-karta.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x947',
+    url: 'https://i.ibb.co/t2jkVmY/pensionnaya-karta.png',
   },
   {
     title: 'Ипотека на первичном рынке от 9,54%',
-    url: 'https://downloader.disk.yandex.ru/preview/a16ad2836d7fc83be0ed60ae7c6b356008343ed3bb7ebf8236de5beb6869f395/61f76083/TiJgUx3MiykEv27lBMrqEHAWZ9m4oBVKmFovEt3kfQ5J03AJqXAhLvXUgj5I5iaE3nCr5L4m8N5jtlo_lhNPUQ%3D%3D?uid=0&filename=min-banner-pervichniy-rinok.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x947',
+    url: 'https://i.ibb.co/0GLQtPv/min-banner-pervichniy-rinok.png',
   },
   {
     title: 'Ипотека на вторичном рынке от 9,54%',
-    url: 'https://downloader.disk.yandex.ru/preview/5b4401ea7c831628ac4aa1554016ddfbec233d37ebac29ebbace52177f36392d/61f760ab/1U5zaRYlW5zwpse_IHc7-5Vt-scR-kV8ux4IMtsEd1WLThrBL-B9ghpAQ5h1QKE4-B3EO1dEeSfV1xfYBCDM3Q%3D%3D?uid=0&filename=ipoteka-na-vtorichnom-rinke_minbanner.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x947',
+    url: 'https://i.ibb.co/cXx3YCH/ipoteka-na-vtorichnom-rinke-minbanner.png',
   },
   {
     title: 'Социальная карта',
-    url: 'https://downloader.disk.yandex.ru/preview/7bfad5490abff700dacc604e065684df90e0c77c079a2fd135afdca1ec964e43/61f760b6/vcR_bFtosdhjV6yLHBBjTJVt-scR-kV8ux4IMtsEd1VrzKfC5KM_8NlPPHBHgTFlswS6RRBHxuKmdgc9O96ctw%3D%3D?uid=0&filename=virtualnaya-karta.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x947',
+    url: 'https://i.ibb.co/zQFzYvN/virtualnaya-karta.png',
   },
 ];
 
