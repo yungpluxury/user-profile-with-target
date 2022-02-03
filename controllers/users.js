@@ -99,7 +99,7 @@ const addCard = (req, res, next) => {
 }
 
 const deleteCard = (req, res, next) => {
-  const { email, cards } = req.body;
+  const { email, cardsfordelete } = req.body;
   let cards = [];
   let cardsBeforeDelete = [];
   User.findById(req.user._id)
