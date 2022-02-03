@@ -12,7 +12,7 @@ const products = [
   {
     title: 'Бюджетное решение',
     url: 'https://i.ibb.co/VvKxTv1/br.png',
-    card: 'officetech',
+    card: ['officetech'],
   },
   {
     title: 'Кредит для своих',
@@ -22,27 +22,27 @@ const products = [
   {
     title: 'Ипотека на коммерческую недвижимость',
     url: 'https://i.ibb.co/Tr8nDKS/252x150-ipoteka-na-komercheskuyu-nedvizhimost.png',
-    card: 'komnedv',
+    card: ['komnedv'],
   },
   {
     title: 'Особая ипотека',
     url: 'https://i.ibb.co/jb0yyyj/special-mortgage-minbanner.png',
-    card: 'gknedv',
+    card: ['gknedv'],
   },
   {
     title: 'Пенсионная карта',
     url: 'https://i.ibb.co/t2jkVmY/pensionnaya-karta.png',
-    card: 'fr',
+    card: ['med'],
   },
   {
     title: 'Ипотека на первичном рынке от 9,54%',
     url: 'https://i.ibb.co/0GLQtPv/min-banner-pervichniy-rinok.png',
-    card: 'fr',
+    card: ['fr'],
   },
   {
     title: 'Ипотека на вторичном рынке от 9,54%',
     url: 'https://i.ibb.co/cXx3YCH/ipoteka-na-vtorichnom-rinke-minbanner.png',
-    card: 'sr',
+    card: ['sr'],
   },
   {
     title: 'Социальная карта',
