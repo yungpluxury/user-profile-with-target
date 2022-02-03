@@ -71,16 +71,14 @@ const createUser = (req, res, next) => {
 };
 
 const addCard = (req, res, next) => {
-  const { email, cardsforupdate } = req.body;
-  let cardsBeforeUpdate = [];
+  const { email, card } = req.body;
   let cards = [];
   User.findById(req.user._id)
     .then((user) => {
-      cardsBeforeUpdate = user.cards;
+      cards = user.cards;
     })
     .then(() => {
-      const cardsAfterUpdate = cardsBeforeUpdate.concat(cardsforupdate);
-      cards = cardsAfterUpdate;
+      cards.push(card);
     })
     .then(() => {
       User.findByIdAndUpdate(req.user._id, { email, cards })
@@ -92,8 +90,10 @@ const addCard = (req, res, next) => {
 }
 
 const deleteCard = (req, res, next) => {
-  const { email, cardsfordelete } = req.body;
+  const { email, card } = req.body;
   let cards = [];
+  let cardsForDelete = [];
+  cardsForDelete.push(card);
   let cardsBeforeDelete = [];
   User.findById(req.user._id)
     .then((user) => {
@@ -101,7 +101,7 @@ const deleteCard = (req, res, next) => {
     })
     .then(() => {
       cards = cardsBeforeDelete.filter(function(card) {
-        return cardsfordelete.indexOf(card) < 0;
+        return cardsForDelete.indexOf(card) < 0;
       });
     })
     .then(() => {
