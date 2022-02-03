@@ -146,7 +146,7 @@ const getProducts = (req, res, next) => {
       }
     })
     .then(() => {
-      res.status(200).send(productList);
+      res.status(200).send({list: productList});
     })
     .catch(next);
 }
