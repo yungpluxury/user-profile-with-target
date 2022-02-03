@@ -7,38 +7,47 @@ const products = [
   {
     title: 'Ипотека в ползунках 5.9%',
     url: 'https://i.ibb.co/8KwPNRW/min-banner-polzunki.png',
+    card: ['child', 'btech'],
   },
   {
     title: 'Бюджетное решение',
     url: 'https://i.ibb.co/VvKxTv1/br.png',
+    card: 'officetech',
   },
   {
     title: 'Кредит для своих',
     url: 'https://i.ibb.co/sjJmwS6/ks.png',
+    card: ['buauto', 'newauto'],
   },
   {
     title: 'Ипотека на коммерческую недвижимость',
     url: 'https://i.ibb.co/Tr8nDKS/252x150-ipoteka-na-komercheskuyu-nedvizhimost.png',
+    card: 'komnedv',
   },
   {
     title: 'Особая ипотека',
     url: 'https://i.ibb.co/jb0yyyj/special-mortgage-minbanner.png',
+    card: 'gknedv',
   },
   {
     title: 'Пенсионная карта',
     url: 'https://i.ibb.co/t2jkVmY/pensionnaya-karta.png',
+    card: 'fr',
   },
   {
     title: 'Ипотека на первичном рынке от 9,54%',
     url: 'https://i.ibb.co/0GLQtPv/min-banner-pervichniy-rinok.png',
+    card: 'fr',
   },
   {
     title: 'Ипотека на вторичном рынке от 9,54%',
     url: 'https://i.ibb.co/cXx3YCH/ipoteka-na-vtorichnom-rinke-minbanner.png',
+    card: 'sr',
   },
   {
     title: 'Социальная карта',
     url: 'https://i.ibb.co/zQFzYvN/virtualnaya-karta.png',
+    card: ['games', 'pc'],
   },
 ];
 
