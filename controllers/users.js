@@ -99,10 +99,8 @@ const addCard = (req, res, next) => {
 }
 
 const deleteCard = (req, res, next) => {
-  const { email, card } = req.body;
+  const { email, cards } = req.body;
   let cards = [];
-  let cardsForDelete = [];
-  cardsForDelete.push(card);
   let cardsBeforeDelete = [];
   User.findById(req.user._id)
     .then((user) => {
@@ -110,7 +108,7 @@ const deleteCard = (req, res, next) => {
     })
     .then(() => {
       cards = cardsBeforeDelete.filter(function(card) {
-        return cardsForDelete.indexOf(card) < 0;
+        return cardsfordelete.indexOf(card) < 0;
       });
     })
     .then(() => {
